@@ -1,0 +1,380 @@
+:root {
+    --dark-black: hsl(0 0% 0%);
+    --black: hsl(0 0% 5%);
+    --light-black: hsl(0 0% 10%);
+
+    --light-white: hsl(0 0% 100%);
+    --white: hsl(0 0% 95%);
+    --dark-white: hsl(0 0% 90%);
+
+    --border-radius: 1rem;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body */
+* {
+    box-sizing: border-box;
+    font-size: clamp(0.5rem, 0.25rem + 1.3333vw, 1.5rem);
+    font-weight: normal;
+}
+
+html {
+    display: flex;
+    height: fit-content;
+    padding: 1.5rem;
+    
+    background-color: #eee;
+}
+
+body {
+    align-self: center;
+    max-width: 70%;
+    max-height: fit-content;
+    min-height: 100vh;
+    margin: 0 auto;
+    font: 1rem/1.5 sans-serif;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(#000, .1);
+    border-radius: var(--border-radius);
+    box-shadow: 0 .5rem 1.5rem hsl(0, 0%, 0%, 0.3);
+    padding-bottom: 3em;
+}
+
+header {
+    position: relative;
+    padding: 1rem 3rem;
+    color: #fff;
+    text-align: center;
+    background-color: var(--light-black);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+header h1 {
+    margin-top: 0;
+    border-bottom: .25em solid var(--dark-white);
+    font-size: clamp(1rem, 0.5rem + 2.6667vw, 3rem);
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+    z-index: 2;
+    height: 3.5rem;
+    overflow-y: hidden;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-block: 0;
+    overflow-x: hidden;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+nav a {
+    color: var(--dark-white);
+    text-decoration: none;
+    display: block;
+    margin: .5rem 1rem;
+    padding: .1rem;
+    font-size: clamp(0.75rem, 0.375rem + 2vw, 2.25rem);;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 1s ease-out;
+    transition: color .5s ease-out;
+    border-radius: .5rem;
+}
+
+.back {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    padding: .2em .5em;
+    border-radius: .5em;
+    background: var(--light-black);
+    border: 1px solid var(--white);
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    margin: 1rem 3rem;
+}
+
+
+
+
+
+/* Typing */ 
+
+table {
+    border-collapse: collapse;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+}
+
+li {
+    margin-left: 1em;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.space {
+    margin-left: 2em;
+}
+
+.dropdown-button {
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid black;
+    background: inherit;
+}
+
+.table-of-contents {
+    max-height: 0;
+    overflow-y: hidden;
+}
+
+.table-of-contents a {
+    color: red;
+    text-decoration: none;
+}
+
+.title {
+    padding: .5em 0;
+    text-align: center;
+    color: red;
+    font-size: clamp(1.25rem, 0.9375rem + 1.6667vw, 2.5rem);
+}
+
+.sub-title {
+    padding: .5em 0;
+    margin-left: 1em;
+    color: red;
+    font-size: clamp(1rem, 0.75rem + 1.3333vw, 2rem);
+    text-decoration: underline;
+}
+
+.up,.down, .bold, .underline, .overline {
+    position: relative;
+    display: inline;
+}
+.up, .down {
+    font-size: .6em;
+}
+
+.up {
+    bottom: .75em;
+}
+
+.down {
+    top: .2em;
+}
+
+.arrow {
+    position: relative;
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: -.125em;
+    left: 0;
+    width: 100%;
+    height: .125em;
+    background: black;
+}
+
+.arrow::after {
+    content: 'v';
+    position: absolute;
+    font-size: .75em;
+    top: -.82em;
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.eq {
+    list-style: none;
+    padding: 0px;
+}
+
+.eq:before {
+    content: '\21D4';
+    margin: 0 .5em 0 0;
+}
+
+.eq:nth-child(1)::before {
+    content: '';
+}
+
+.i-box, .box {
+    position: relative;
+    padding: .5rem;
+    margin: 4em 1em;
+    border-radius: .5em;
+}
+
+.i-box::before, .box::before, .sidebar::before {
+    --height: 1.5em;
+    text-align: center;
+    font-size: clamp(0.5rem, 0.25rem + 1.3333vw, 1.5rem);
+    position: absolute;
+    top: calc(calc(-1 * var(--height)) - .6em);
+    left: 5;
+
+    width: calc(fit-content + 10px);
+    height: var(--height);
+
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-weight: bold;
+
+    padding: .25rem;
+    content: attr(data);
+    background: var(--color);
+}
+
+.i-box {
+    outline: .25em solid red;
+}
+
+.i-box::before {
+    content: 'A retenir';
+    background: red;
+}
+
+.box {
+    outline: .25em solid var(--color);
+}
+
+.sidebar {
+    margin-top: 3em;
+    position: relative;
+    padding: 1em;
+}
+
+.sidebar::before {
+    padding: .4em;
+    left: 0;
+}
+
+.sidebar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background: var(--color);
+}
+
+.fraction {
+    display: inline-grid;
+    position: relative;
+    top: -.5em;
+    padding-bottom: 0;
+    padding-top: .5em;
+}
+
+.fraction h1 {
+    position: relative;
+    text-align: center;
+}
+
+.fraction h1:nth-child(1)::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+}
+ 
+
+.split {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+}
+
+.l-border * {
+    border-left: 2px solid black;
+    padding-left: 1em;
+}
+
+tr {
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+    padding: .5em;
+}
+
+.strip tr:nth-child(even) {
+    background: lightgray;
+}
+
+
+@media (max-width:500px) {
+    body {
+        min-width: 100%;
+    }
+}
