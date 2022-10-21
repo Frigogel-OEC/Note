@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+        <nav>
+            <div class="navbar">
+                <a href="math.html">
+                    <button class="left-slider-btn">&lt;</button>
+                </a>
+                <div class="slider">Ph-Ch</div>
+                <a href="nsi.html">
+                    <button class="right-slider-btn">&gt;</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <button class="dropdown-button" active="False">Table of Contents</button>
+        <div class="table-of-contents"></div>
+
+        <h1 class="title">Chapitre 2 : Dosage Spectrophotométrique</h1>
+
+        <h1 class="sub-title">La Spectrophotométrie UV-Visible</h1>
+
+        Le domaine de longueur d'onde <span color="blue">Visible</span> : 400nm à 800nm <br>
+        Le domaine de longueur d'onde des <span color="blue">UV</span> : 200nm à 400nm <br>
+        <br>
+        La <span color="blue">lumière blanche</span> est une superposition de lumières colorées, 
+        on dit qu'elle est <span color="blue">polychromatique</span>.
+
+        <h1 class="sub-title">Les spectres d'absorption</h1>
+        Un milieu dispersif est un milieu transparent dont l'indice de réfraction dépend de la longueur d'onde. <br>
+        <br>
+        <li><h1 class="underline">Les spectres de raies</h1></li>
+        <img src="../images/ph-ch/spectre.jfif" alt="">
+        <br>
+        <li><h1 class="underline">Les spectres de bandes</h1></li>
+        <br>
+        Ces différents spectres permettent <span color="blue"> d'identifier les entités chimiques </span>. Ils sont caractéristiques d'un élément chimique <br>
+        
+        <h1 class="sub-title">La loi de Beer-Lambert</h1>
+        La loi : A = &epsi; x L x C
+        <li>Avec A qui n'a pas d'unité</li>
+        <li>&epsi; en L.cm<span class="up">-1</span>.mol<span class="up">-1</span></li>
+        <li>L en cm</li>
+        <li>c en mol.L<span class="up">-1</span></li> 
+        <br>
+        On peut aussi écrire la loi sous la forme: <br>
+        A = k x c
+        <li>Avec k qui est une constante</li>
+        <li>c en mol.L<span class="up">-1</span></li>
+        <br>
+        <span color="blue">La loi permet de calculer l'absorbance</span> <br>
+        
+        <div class="box" color="black" data="Important">
+            La loi de Beer-Lambert est seulement vérifié si la concenration en quantité de matière de la solution est inférieur à <span color="blue">3,00.10<span class="up">-3</span>mol.L<span class="up">-1</span></span>
+        </div>
+
+        <h1 class="sub-title">Caractéristiques d'une espèce colorée</h1>
+
+        La couleur d'une espèce chimique est la couleur <span color="blue">complémentaire sur l'étoile chromatique</span> 
+        <img src="../images/ph-ch/étoile-chromatique.png" alt=""><br>
+        Lorsqu'une espèce chimique absorbe plusieurs couleurs, sa couleur est la <span color="blue">synthèse soustractive</span> ou <span color="blue">additive des couleurs complémentaires</span>.
+        <img src="../images/ph-ch/synthèse_soustractive_additive.JPG" alt="">
+
+        <h1 class="sub-title">Dosage spectrométrique</h1>
+
+        <span color="blue">Un dosage en étalonnage</span> : Trouver la concentration en masse ou en quantité de matière d'une espèce E dans une solution S. <br>
+        <br>
+        Si on a plusieurs solution de concentration connu, on peut trouver une concentration inconnu. <br>
+        En trouvant l'absorbance des concentration connu, on peut trouver une <span color="blue">constante qui vérifie la loi de Beer-Lambert : A = k x c</span>.<br>
+        On peut ensuite utiliser <span color="blue">l'absorbance de la solution inconnu et la placer sur la droite</span> dessiner grâce au concentration connu. <br>
+        <br>
+        <img src="../images/ph-ch/loi-de-Beer-Lambert.png" alt="" style="width: 60%">
+
+        <h1 class="title">Chapitre 3 : Description d'un fluide au repos</h1>
+
+        <h1 class="sub-title">Description miscroscopique d'un fluide</h1>
+        <table>
+            <tr>
+                <th>État physique</th>
+                <th>Solide</th>
+                <th>Liquide</th>
+                <th>Gaz</th>
+            </tr>
+            <tr>
+                <th>Modélisation</th>
+                <th colspan="3"><img src="../images/ph-ch/description-de-l'état.jpg" alt="" style="width: 100%;"></th>
+            </tr>
+            <tr>
+                <th>Description de l'état</th>
+                <th>Compact, ordonné</th>
+                <th>Compact, désordonné</th>
+                <th>Désordonné, dispersé</th>
+            </tr>
+        </table>
+        <br>
+        Puisque les entités d'un fluide sont caractérisé par un mouvement désordonné et incessant, <span color="blue">les liquides et les gaz sont des fluides</span> <br>
+        <br>
+        
+
+        <h1 class="sub-title">Grandeurs macroscopiques de descriptions d'un fluide au repos</h1>
+
+        Pour caractérisé un gaz, on va utiliser 3 grandeurs macroscopiques: <br>
+        <li>La <span color="blue">température</span> T</li>
+        <li>La <span color="blue">masse volumique</span> ρ</li>
+        <li>La <span color="blue">pression</span> P</li>
+
+        C'est la <span color="blue">proximité des entités dans un milieu</span> qui caractérise la masse volumique 
+
+        <div class="i-box">
+            <h1 class="t-center">ρ<span class="down">eau</span> = 1.10<span class="up">3</span>kg.m<span class="up">-3</span></h1>
+            <h1 class="t-center">ρ<span class="down">air</span> = 1kg.m<span class="up">-3</span></h1>
+        </div>
+
+        La température la plus froide possible est de -273,15°C et de 0 en Kelvin, donc <span color="blue">0(K) = 0(°C) + 273,15</span> <br>
+        La température est représentée par <span color="blue">des vecteurs vitesse</span>. À 0K, le zéro absolu, les entités sont <span color="blue">immobiles</span> et donc à leur plus froid <br>
+        <br>
+        La pression est une grandeur macroscopique qui mesure le nombre de chocs qu'un fluide exerce sur une surface donnée. <br>
+        <h1 color="blue" class="t-center">Plus de choc = plus de pression</h1>
+
+        <h1 class="sub-title">Action d'un fluide sur une surface</h1>
+
+        
+        <img src="../images/ph-ch/force-presante.jpg" alt="" style="max-width: 80%;">
+        Sur cette image, on remarque que la vitesse du jet change en fonction de la hauteur du trou et que les jets sont perpendiculaires à la paroi de la bouteille. <br>
+        La force pressante se note : <span class="arrow">F</span><span class="down">a/b</span> où a agit sur b. <br>
+        <br>
+        <img src="../images/ph-ch/cloche-a-vide.jfif" alt="">
+        Lorsqu'on a le vide à l'intérieur de la cloche à vide (b), le ballon gonfle, puisque à l'intérieur du ballon, <span color="blue">les molécules d'air exerce la même force pressante</span> que lorsqu'il y avait de l'air dans la cloche à vide (a). Puisqu'il n'y a <span color="blue">plu d'air dans la cloche à vide pour compenser</span>, le ballon gonfle. <br>
+        <br>
+        Plus la force pressante est grande, plus la pression est grande <br>
+        Plus la la surface est grande, plus la force pressante est grande <br>
+        Donc : <span color="blue">F = P x S</span>
+        <li>F : est la force pressante en N</li>
+        <li>P : est la pression en Pa</li>
+        <li>S : est la surface en m<span class="up">2</span></li>
+        <br>
+        Les caractéristiques de la force pressante : <br>
+        <li>La direction (---) : perpendiculaire à la paroi</li>
+        <li>Le sens (&lt; >) : du fluide vers la paroi</li>
+        <li>Valeur : F = P x S</li>
+
+        <h1 class="sub-title">Pression dans un fluide incompressible au repos</h1>
+
+        La loi fondamentale de la statique des fluides au repos et <span color="blue">incompressible</span> (donc pas les gaz): <br>
+        <h1 class="t-center">P<span class="down">B</span> - P<span class="down">A</span> = ρ x g x (z<span class="down">A</span> - z<span class="down">B</span>)</h1>
+        <li>P<span class="down">A</span> et P<span class="down">B</span> s'expriment en pascal (Pa)</li>
+        <li>ρ s'exprime en kg.m<span class="up">-3</span></li>
+        <li>g = 9.81 N.kg<span class="up">-1</span></li>
+        <li>Z<span class="down">A</span> et Z<span class="down">B</span> s'expriment en mètres</li>
+
+        <img src="../images/ph-ch/loi-de-la-statique-des-fluides.png" alt="">
+
+        <div class="i-box">
+            La pression atmosphérique P<span class="down">atm</span> est égale à 101 325 Pa
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple">
+            Calculons la pression en pascal subie par un plongeur à -12.0m de profondeur. <br>
+            Sachant que la masse volumique de l'eau de mer est de 1,03.10<span class="up">3</span>kg.m<span class="up">-3</span><br>
+            <br>
+            <li class="eq">P<span class="down">B</span> - P<span class="down">A</span> = ρ x g x (z<span class="down">A</span> - z<span class="down">B</span>)</li>
+            <li class="eq">P<span class="down">B</span> = 101325 + 1,03.10<span class="up">3</span> x 9.81 x 12</li>
+            <li class="eq">P<span class="down">B</span> = 2,23.10<span class="up">5</span>Pa</li>
+        </div>
+
+        <h1 class="sub-title">Pression dans un gaz</h1>
+        La loi de Mariotte: <br>
+        V = k x <div class="fraction"><h1>1</h1><h1>P</h1></div>
+        <li>V : est un volume</li>
+        <li>k : est une constante</li>
+        <li>P : est une pression</li>
+        Cependant la loi de Mariotte est plus utile sous la forme: <br>
+        <span color="blue">V<span class="down">1</span> x P<span class="down">1</span> = V<span class="down">2</span> x P<span class="down">2</span></span><br>
+        <div class="sidebar" color="black" data="Exemple">
+            On suppose que la pression des poumons d'un plongeur est égal à celle de la pression atmosphérique, <span color="blue">P<span class="down">A</span> = P<span class="down">atm</span></span>. Avant de plonger, il inspire un volume <span color="blue">V<span class="down">A</span> de 2,0.10<span class="up">-3</span>m<span class="up">3</span></span> d'air atmosphérique. Quel volume V<span class="down">B</span> occupe cet air lorsqu'il atteint une profondeur de <span color="blue">z<span class="down">B</span> = -3.2m</span> à la pression P<span class="down">B</span><br>
+            <br>
+            On applique la loi de Mariotte : P x V = k, <br>
+            Donc P<span class="down">atm</span> x V<span class="down">A</span> = P<span class="down">B</span> x V<span class="down">B</span>, <br> donc V<span class="down">B</span> = <div class="fraction">
+                <h1>P<span class="down">atm</span> x V<span class="down">A</span></h1>
+                <h1>P<span class="down">B</span></h1>
+            </div> or P<span class="down">B</span> est la pression donné par la fondamentale de la statique, donc :
+            <h1 class="t-center">P<span class="down">B</span> - P<span class="down">A</span> = ρ x g x (z<span class="down">A</span> - z<span class="down">B</span>)</h1>
+            donc V<span class="down">B</span> = <div class="fraction">
+                <h1>P<span class="down">atm</span> x V<span class="down">A</span></h1>
+                <h1>P<span class="down">atm</span> + ρ x g x (z<span class="down">A</span> - z<span class="down">B</span>)</h1>
+            </div> <br>=<div class="fraction">
+                <h1>101 325 x 2,0.10<span class="up">-3</span></h1>
+                <h1>101 325 + 1000 x 9,81 x (0 - (-3,2))</h1>
+            </div> = 1,5.10<span class="up">-3</span>m<span class="up">3</span>
+        </div>
+
+    </div>
+    
+</body>
+</html>
