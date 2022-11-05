@@ -1,0 +1,42 @@
+.container {
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul li {
+    padding: 1em 2em;
+    margin: 0 !important;
+
+    background-color: var(--black);
+    border-radius: var(--border-radius);
+    border: 5px solid gray;
+    border-style: inset;
+
+    box-shadow: -2px -2px 5px 3px gray;
+    transition: .5s ease-out;
+}
+
+ul li:hover {
+    background-color: var(--dark-white);
+    border-color: var(--light-black);
+}
+
+ul a {
+    margin: 2em 1em;
+    /* display: block; */
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover {
+    color: var(--black);
+    transition: .25s ease-out;
+}

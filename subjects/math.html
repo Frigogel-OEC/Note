@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+        <nav>
+            <div class="navbar">
+                <a href="../index.html">
+                    <button class="left-slider-btn">&lt;</button>
+                </a>
+                <div class="slider">Math</div>
+                <a href="ph-ch.html">
+                    <button class="right-slider-btn">&gt;</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <button class="dropdown-button" active="False">Table of Contents</button>
+        <div class="table-of-contents"></div>
+
+        <h1 class="title">Chapitre 1 : Fonctions polynomiales du second degré</h1>
+
+        <h1 class="sub-title">Définition</h1>
+
+        On dit que f est une fonction polynomiale du second degré définie pour tous x de ℝ par : <br>
+        <span class="space"></span><span color="blue">f(x) = ax<up>2</up>+bx+c</span>
+        <li>a, un réel <span color="blue">non nul</span> (ℝ\0)</li>
+        <li>b, un réel</li>
+        <li>c, un réel</li>
+        <br>
+        <div class="sidebar" color="black" data="Exemple">
+            g(x) = 2x<up>2</up>+3x+4
+            <li>a = 2</li>
+            <li>b = 3</li>
+            <li>c = 4</li>
+            Donc g est une fonction polynomiale du 2nd degré, car il peut s'écrire sous la forme : ax<span
+                class="up">2</up>+bx+c
+        </div> <br>
+        <img src="../images/math/parabole.svg" alt="" style="width: 50%;"> <br>
+        Réprésenté graphiquement, dans un repère orthogonal, une équation du 2nd degré est une <span
+            color="blue">parabole</span>
+
+        <div class="i-box">
+            <h1>ax<up>2</up>+bx+c est une équation polynomiale du second degré si et seulement si:</h1>
+            <ul>
+                <li>a ∈ ℝ*</li>
+                <li>b ∈ ℝ</li>
+                <li>c ∈ ℝ</li>
+            </ul>
+        </div>
+
+        <h1 class="sub-title">Forme canonique</h1>
+
+        <div class="box" color="black" data="Définition">
+            Soit f(x) = ax<up>2</up>+bx+c (a &ne; 0) <br>
+            Il existe un unique couple de réels (α, β) tel que: <br>
+            <span class="space"></span><span color="red">f(x) = a(x-α)<up>2</up>+β</span>
+        </div>
+
+        <div class="sidebar" color="green" data="Propriété 1">
+            α = <div class="fraction">
+                <h1>-b</h1>
+                <h1>2a</h1>
+            </div> <br>
+            β = <div class="fraction">
+                <h1>4ac-b<up>2</up></h1>
+                <h1>4a</h1>
+            </div>
+        </div> <br>
+
+        <div class="sidebar" color="green" data="Propriété 2">
+            f(x) = ax<up>2</up>+bx+c <br>
+            f(x) = a(x-α)<up>2</up>+β <br>
+            <br>
+            <span color="red">f(α) = β,</span> <br>
+            pusique f(α) = a(α - α)<up>2</up>+β = a(0)<up>2</up>+β = β
+        </div>
+
+        <h1 class="sub-title">Sens de variation</h1>
+
+        <div class="box" color="blue" data="Rappel">
+            Si x<down>1</down> &lt; x<down>2</down>
+            et f(x<down>1</down>) &lt; f(x<down>2</down>), <br>
+            alors f est strictement croissant et vice-versa
+        </div>
+
+        <div class="sidebar" color="green" data="Propriété 1">
+            f définie sur ℝ, <br>
+            f(x) = a(x-α)<up>2</up>+β
+            <li>Si <span color="blue">a &gt; 0</span>, alors f est <span color="blue">décroissant</span> sur ]
+                -&infin;;&alpha; ] et f est <span color="blue">croissant</span> sur [ &alpha;;+&infin;[</li>
+            <li>Si <span color="blue">a &lt; 0</span>, alors f est <span color="blue">croissant</span> sur ]
+                -&infin;;&alpha; ] et f est <span color="blue">décroissant</span> sur [ &alpha;;+&infin;[</li>
+        </div>
+
+        <img src="../images/math/tdv_asup0.png" alt="" style="width: 50%">
+        <h1 class="t-center">et vice versa si a &lt; 0</h1>
+
+        <div class="sidebar" color="green" data="Propriété 2">
+            f définie sur ℝ, <br>
+            f(x) = a(x-α)<up>2</up>+β
+            <li>Si a &gt; 0, alors f admet un <span color="blue">minimum</span> : β. Il est atteint lorsque x = &alpha;
+            </li>
+            <li>Si a &lt; 0, alors f admet un <span color="blue">maximum</span> : β. Il est atteint lorsque x = &alpha;
+            </li>
+
+        </div>
+
+        <div class="sub-title">Propriété graphique</div>
+
+        <div class="sidebar" color="green" data="Propriété 1">
+            <li>Si a &gt; 0, "les branches C<down>f</down> sont tournées vers le <span
+                    color="blue">haut</span></li>
+            <li>Si a &lt; 0, "les branches C<down>f</down> sont tournées vers le <span
+                    color="blue">bas</span></li>
+        </div>
+
+        <div class="sidebar" color="green" data="Propriété 2">
+            C<down>f</down> admet un sommet <span color="blue">S(&alpha;;&beta;)</span>
+        </div>
+
+        <div class="sidebar" color="green" data="Propriété 3">
+            C<down>f</down> admet un axe de symétrie : c'est la droite (d) passant par S et parallèle à
+            l'axe des ordonnées
+            <h1 class="t-center">(d) : x = &alpha;</h1> <br>
+            <img src="../images/math/parabole_axe_de_symétrie.webp" alt="" style="width: 25%">
+        </div>
+
+        <div class="sidebar" color="green" data="Propriété 4">
+            C<down>f</down> coupe l'axe des ordonnées en un unique point : <span color="blue">A(0;c)</span>
+            -&gt; f(0)
+        </div>
+
+        <h1 class="title">
+            Chapitre 2 : Équation du second degré
+        </h1>
+
+        <h1 class="sub-title">
+            Définition
+        </h1>
+        Équation : une égalité avec un ou plusieurs inconnus <br>
+        Équation du second degré : une équatioln de la forme:
+        <h1 class="t-center">ax<up>2</up>+bx+c=0</h1>
+
+        <div class="sidebar" color="black" data="Exemple 1">
+            <li class="eq">x<up>2</up>+16x = -25 <br></li>
+            <li class="eq">x<up>2</up>+50x+25 = 0 <br></li>
+            <li class="eq">(x+5)<up>2</up> = 0 <br></li>
+            <li class="eq">x = -5 <br></li>
+            <br>
+            S = ∅ <br>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 2">
+            <li class="eq">8x<up>2</up>-16x = 0 <br></li>
+            <li class="eq">8x<up>2</up> = 0 <br></li>
+            <li class="eq">x<up>2</up>+2(5x) + 5<up>2</up> = 0 <br></li>
+            <li class="eq">x = √2 ou x = -√2 <br></li>
+            S = {√2 ; -√2} <br>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 3">
+            x<up>2</up> = -1 <br>
+            S = ∅
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 4">
+            <li class="eq">x<up>2</up>+3x+2 = 0</li>
+            <li class="eq">(x+1)(x+2) = 0</li>
+            <li class="eq">x+1 = 0 ou x+2 =0</li>
+            <li class="eq">x = -1 ou x = -2</li>
+            S = {-1 ; -2}
+        </div>
+
+        <h1 class="sub-title">Le discriminant</h1>
+        <h1 color="red">Définition : Soit f(x) = ax<up>2</up>+c</h1>
+        <h1>Le discriminant de f est le nombre: <span color="red">b<up>2</up>-4ac</span></h1>
+        On le note: Δ.
+
+        <div class="sidebar" color="black" data="Exemple 1">
+            Soit g(x) = 5x<up>2</up>+3x+2 <br>
+            Calculons le discriminant de g: <br>
+            Δ = 3<up>2</up>-4(5)(2)
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 2">
+            Soit h(x) = x<up>2</up>-8x-3 <br>
+            Δ = (-8)<up>2</up>-4(1)(-3) = 76
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 3">
+            Soit i(x) = <div class="fraction">
+                <h1>1</h1>
+                <h1>2</h1>
+            </div>-5x<up>2</up>-x <br>
+            Δ = (-1)<up>2</up>-4(-5)(<div class="fraction">
+                <h1>1</h1>
+                <h1>2</h1>
+            </div>) = 11
+        </div>
+
+        <div class="i-box">
+            <h1>Δ = b<up>2</up>-4(a)(c)</h1>
+        </div>
+
+        <h1 class="sub-title">Résolution</h1>
+
+        Soit (E) = ax<up>2</up>+bx+c = 0 <br>
+        Soit Δ = b<up>2</up>-4ac
+        <li>Si Δ &lt; 0, alors l'équation admet <span color="blue">aucune solution réelle</span>.</li>
+        <li>Si Δ = 0, alors l'équation admet <span color="blue">une unique solution</span>.</li>
+        <li>Si Δ &gt; 0, alors l'équation admet<span color="blue">deux solutions réelles et distinctes</span>:
+        <li style="margin-left: 4em;">
+            <div class="fraction">
+                <h1>-b-√Δ</h1>
+                <h1>2a</h1>
+            </div>
+        </li>
+        <li style="margin-left: 4em;">
+            <div class="fraction">
+                <h1>-b+√Δ</h1>
+                <h1>2a</h1>
+            </div>
+        </li>
+        </li>
+
+        <h1 class="sub-title">Interprétation graphique</h1>
+        Soit f(x) = ax<up>2</up>+bx+c <br>
+        <br>
+        <img src="../images/math/équation_2nd_degré_graphique.webp" alt="">
+
+        <div class="sidebar" color="green" data="Propriété">
+            <li>Si <span color="blue">Δ &lt; 0</span>, alors C<down>f</down> ne coupe pas l'axe des abscisses</li>
+            <li>Si <span color="blue">Δ = 0</span>, alors C<down>f</down> coupe l'axe des abscisses en un unique point : S(&alpha;;0)</li>
+            <li>Si <span color="blue">Δ &gt; 0</span>, alors C<down>f</down> coupe l'axe des abscisses en deux points distincts : A(<div class="fraction">
+                <h1>-b+√Δ</h1>
+                <h1>2a</h1>
+            </div>;0) et B(<div class="fraction">
+                <h1>-b-√Δ</h1>
+                <h1>2a</h1>
+            </div>;0)</li>
+        </div>
+
+        <h1 class="sub-title">D'autres équations</h1>
+
+        <div class="sidebar" color="black" data="Exemple 1">
+            <li class="eq">5x<up>3</up>+4x<up>2</up>-x = 0</li>
+            <li class="eq">x(5x<up>2</up>+4x-1) = 0</li>
+            <li class="eq">x = 0 ou 5x<up>2</up>+4x-1=0</li>
+            <li class="eq">...</li>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 2">
+            15x<up>3</up>-34x<up>2</up>-47x+42 = 0 <br>
+            <br>
+            Aide de l'énoncé : (x-3)(ax<up>2</up>+bx+c) <br>
+            <br>
+            On cherche les réels a,b,c tel que: <br>
+            <span class="space"></span> (x-3)(ax<up>2</up>+bx+c) = 15x<up>3</up>-34x<up>2</up>-47x+42 <br>
+            <span class="underline">Or</span>: <br>
+            <span class="space"></span>(x-3)(ax<up>2</up>+bx+c) = ax<up>3</up>+bx<up>2</up>+cx-3ax<up>2</up>-3bx-3c = ax<up>3</up>+(b-3a)x<up>2</up>+(c-3b)x-3c <br>
+            <span class="underline">Ainsi:</span><br>
+            <br>
+            <div class="split">
+                <div class="l-border">
+                    a = 15
+                </div>
+                <div class="l-border">
+                    <li class="eq">b-3a = -34</li>
+                    <li class="eq">b-3(15) = -34</li>
+                    <li class="eq">b-45 = -34</li>
+                    <li class="eq">b = 11</li>
+                </div>
+                <div class="l-border">
+                    <li class="eq">c-3b = -47</li>
+                    <li class="eq">-14-4b = -47</li>
+                    <li class="eq">-3b = -33</li>
+                    <li class="eq">b = 11</li>
+                </div>
+                <div class="l-border">
+                    <li class="eq">-3c = 42</li>
+                    <li class="eq">c = -14</li>
+                </div>
+            </div> <br>
+
+            Donc 15x<up>3</up>-34x<up>2</up>-47x+42 = (x-3)(15x<up>2</up>+11x-14) <br>
+            ...
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 3">
+            (E) = x<up>4</up> + 12x<up>2</up> + 27 = 0 <br>
+            <br>
+            Soit X = x<up>2</up> <br>
+            (E) = X<up>2</up> + 12X + 27 = 0 <br>
+            <br>
+            Soit Δ, le discriminant de (E): <br>
+            Δ = 12<up>2</up> - 4(1)(27) = 36 <br>
+            Δ &gt; 0, donc l'équation (E) admet deux solutions: <br>
+            <span class="space"></span>X<down>1</down> = <div class="fraction">
+                <h1>-12-√36</h1>
+                <h1>2(1)</h1>
+            </div> = -3 <br>
+            <span class="space"></span>X<down>2</down> = <div class="fraction">
+                <h1>-12+√36</h1>
+                <h1>2(1)</h1>
+            </div> = -9 <br>
+            <br>
+            On cherche x ∈ ℝ tel que: <br>
+            <div style="width: fit-content;">
+                <div class="split">
+                    <div class="l-border">
+                        <li class="eq">X = -3</li>
+                        <li class="eq">x<up style="border:none; padding:0;">2</up> = -3</li>
+                    </div>
+                    <h1 class="t-center">ou</h1>
+                    <div class="l-border">
+                        <li class="eq">X = -9</li>
+                        <li class="eq">x<up style="border:none; padding:0;">2</up> = -9</li>
+                    </div>
+                </div>
+                <h1 class="t-center">S = ∅</h1>
+            </div>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 4">
+            <li class="eq">x-3 = <div class="fraction"><h1>2</h1><h1>x</h1></div></li>
+            <li class="eq">x(x-3) = 2</li>
+            <li class="eq">x<up>2</up> = 2</li>
+            <li class="eq">x<up>2</up> -3x -2 = 0</li>
+            <br>
+            On n'oublie pas d'exclure 0, car <div class="fraction"><h1>2</h1><h1>0</h1></div> est impossible
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple 5">
+            <li class="eq"><div class="fraction">
+                <h1>x</h1>
+                <h1>x - 1</h1>
+            </div> + <div class="fraction">
+                <h1>1</h1>
+                <h1>x - 2</h1>
+            </div> = 0</li>
+            <li class="eq"><div class="fraction">
+                <h1>x(x - 2)</h1>
+                <h1>(x - 1)(x - 2)</h1>
+            </div> + <div class="fraction">
+                <h1>1(x - 1)</h1>
+                <h1>(x - 2)(x - 1)</h1>
+            </div> = 0</li>
+            <li class="eq"><div class="fraction">
+                <h1>x<up>2</up> - 2x + x - 1</h1>
+                <h1>(x - 1)(x - 2)</h1>
+            </div> = 0</li>
+            <li class="eq"><div class="fraction">
+                <h1>x<up>2</up> - x - 1</h1>
+                <h1>(x - 1)(x - 2)</h1>
+            </div> = 0</li>
+            <br>
+            (x - 1)(x - 2) &ne; 0
+            <div style="width: fit-content">
+                <div class="split">
+                    <div class="l-border">
+                        <li class="eq">x - 1 &ne; 0</li>
+                        <li class="eq">x &ne; 1</li>
+                    </div>
+                    <h1 class="t-center">ou</h1>
+                    <div class="l-border">
+                        <li class="eq">x - 2 &ne; 0</li>
+                        <li class="eq">x &ne; 2</li>
+                    </div>
+                </div>
+                On n'exclut donc 1 et 2.
+            </div><br>
+            On résout ensuite x<up>2</up> - x - 1 = 0 <br>
+            ...
+        </div>
+
+        <h1 class="title">Chapitre 3 : Les probabilités</h1>
+        <div class="box" color="blue" data="Rappel">
+            <li>Équiprobabilité : chaque issu de l'univers ont la même probabilité</li>
+            <li>
+                <h1 class="overline">L</h1>: L barre, contraire de L
+            </li>
+            <li>F∩L: F inter L, issu commune de F et L</li>
+            <li>F∪L: F union L, issu de F et L</li>
+        </div>
+
+        <h1 class="sub-title">Les probabilités conditionnelles</h1>
+
+        Définition: Soit A et B, deux évènements avec (A ≠ ∅) <br>
+        La probabilité que l'évènements B se réalise <span color="red"> sachant que</span>
+        l'évènements A s'est déja réalisé se note P<down>A</down>(B) <br>
+        et se lit P de B sachant A.
+
+        <div class="i-box">
+            P<down>A</down>(B) = <div class="fraction">
+                <h1>P(A∩B)</h1>
+                <h1>P(A)</h1>
+            </div> <br>
+
+            Avec A ≠ 0 et B ≠ 0 <br>
+            <li>P(A∩B) = P<down>A</down>(B) x P(A)</li>
+            <li>P(A∩B) = P<down>B</down>(A) x P(B)</li>
+        </div>
+
+        <h1 class="sub-title">Indépendance</h1>
+
+        <div class="box" color="blue" data="Définition">
+            <span color="black">
+                Soit A et B, deux évènements. <br>
+                A et B sont indépendants si P(A∩B) = P(A) x P(B)
+            </span>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple">
+            On lance un dé à 12 faces
+            <li>I : "Le nombre est impair"</li>
+            <li>C : "Le nombre est multiple de 5"</li>
+            I et C sont-ils indépendants? <br>
+            <br>
+            I = {1; 3; 5; 7; 9; 11} <br>
+            C = {5; 10} <br>
+            I∩C = {5} <br>
+
+            P(I) x P(C) = <div class="fraction">
+                <h1>1</h1>
+                <h1>2</h1>
+            </div> x <div class="fraction">
+                <h1>1</h1>
+                <h1>6</h1>
+            </div> = <div class="fraction">
+                <h1>1</h1>
+                <h1>12</h1>
+            </div> <br>
+            P(I∩C) = <div class="fraction">
+                <h1>1</h1>
+                <h1>12</h1>
+            </div> <br>
+            Donc, P(I) x P(C) = P(I∩C) <br>
+            Ainsi I et C sont indépendants
+        </div>
+        <div class="i-box">
+            Si A et B sont indépendants et non vides <br>
+            Alors, P<down>A</down>(B) = P(B)
+        </div>
+
+        <div class="sidebar" color="blue" data="Démonstration">
+            P<down>A</down>(B) = <div class="fraction">
+                <h1>P(A∩B)</h1>
+                <h1>P(A)</h1>
+            </div> = <div class="fraction">
+                <h1>P(A) x P(B)</h1>
+                <h1>P(A)</h1>
+            </div> = P(B)
+        </div>
+
+        <h1 class="sub-title">La loi des probabilités totales</h1>
+        <img src="../images/math/probabilités-totales.jpg" alt="">
+
+        <div class="sidebar" color="red" data="Énoncé">
+            Soit n ∈ N* <br>
+            Soit Ω, l'univers associé à une expérience aléatoire <br>
+            On a une <span class="underline">partition</span> de Ω : A<down>1</down>, A<down>2</down> ... A<down>n</down> <br>
+            A<down>1</down> ∪ A<down>2</down> ... A<down>n</down> = Ω, on dit que
+            les évènements A<down>1</down>, A <down>2</down>, ... A <down>n</down> sont incompatibles deux à deux. <br>
+            Soit B un évènements: <br>
+            <span class="space">P(B) = P(B∩A<down>1</down>) + P(B∩A<down>2</down>) + ... +
+                P(B∩A<down>n</down>)</span>
+        </div>
+
+        <div class="sidebar" color="black" data="Exemple">
+            Dans une classe de 35 élèves : 12 font LV1 Anglais, 13 font LV1 Allemand et 10 font LV1 Italien
+            <li>Chez les LV1 anglais, la moitié font LV2 espagnol</li>
+            <li>Chez les LV1 allemand, <div class="fraction">
+                    <h1>3</h1>
+                    <h1>4</h1>
+                </div> font LV2 espagnol</li>
+            <li>Chez les LV1 italien, 20% font LV2 espagnol</li>
+            <br>
+            1. Quelle est la probabilité qu'une personne choisit au hasard fait <span color="blue">LV1 anglais et LV2
+                espagnol</span>?<br>
+            <br>
+            P(A<down>n</down>∩E) = P<down>A</down>(A<down>l</down>) x P<span
+                class="down">A<down>n</down></span>(E) <br>
+            <span class="space"></span>= <div class="fraction">
+                <h1>1</h1>
+                <h1>2</h1>
+            </div> x <div class="fraction">
+                <h1>12</h1>
+                <h1>35</h1>
+            </div> = <div class="fraction">
+                <h1>6</h1>
+                <h1>35</h1>
+            </div> <br>
+            <br>
+            2. Quelle est la probabilité qu'une personne choisit au hasard fait <span color="blue">LV1 allemand, mais
+                pas LV2 espagnol</span>? <br>
+            <br>
+            P(A<down>l</down>∩<span class="overline">E</span>) = P(A<down>l</down>) x P<down>A<down>l</down></down>(<span class="overline">E</span>) <br>
+            <span class="space"></span> = <div class="fraction">
+                <h1>13</h1>
+                <h1>35</h1>
+            </div> x <div class="fraction">
+                <h1>1</h1>
+                <h1>4</h1>
+            </div> = <div class="fraction">
+                <h1>13</h1>
+                <h1>140</h1>
+            </div> <br>
+            <br>
+            3. Quelle est la probabilité qu'un élève choisit au hasard fait <span color="blue">LV2 espagnol</span>? <br>
+            <br>
+            A<down>n</down> + A<down>l</down> + I = Ω <br>
+            Donc A<down>n</down> + A<down>l</down> + I sont incompatibles deux à deux <br>
+            Donc (A<down>n</down>, A<down>l</down>, I) est une partition de Ω. <br>
+            Donc d'après la loi des probabilités totales : <br>
+            P(E) = P(A<down>n</down>∩E) + P(A<down>l</down>∩E) + P(I∩E) <br>
+            <span class="space"></span>= <div class="fraction">
+                <h1>6</h1>
+                <h1>35</h1>
+            </div> + <div class="fraction">
+                <h1>13</h1>
+                <h1>35</h1>
+            </div> x <div class="fraction">
+                <h1>3</h1>
+                <h1>4</h1>
+            </div> + <div class="fraction">
+                <h1>10</h1>
+                <h1>35</h1>
+            </div> x <div class="fraction">
+                <h1>20</h1>
+                <h1>100</h1>
+            </div> = <div class="fraction">
+                <h1>71</h1>
+                <h1>140</h1>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
